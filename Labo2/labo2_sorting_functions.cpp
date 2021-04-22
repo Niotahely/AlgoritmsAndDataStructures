@@ -199,7 +199,7 @@ int RandomPartition(vector<int> &v, int start , int end)
 {
    //La funzione e' pressoche la stessa , solo che alla dichiarazione del pvt andremo a
    //chiamare la f.random
-   int pivot = start + rand()%(fine-inizio+1); // dichiaro che il pivot prendera sara in una posizione casuale
+   int pivot = start + rand()%(end-start+1); // dichiaro che il pivot prendera sara in una posizione casuale
    // tra v.at(0) e size;
 
    int pvt_index = start+1; 
